@@ -77,6 +77,7 @@ main > .container {
     position: absolute;
     left: 88%;
 }
+/* Card img standard */
 
 #card1 {
     background-image: url("../images/1.webp");
@@ -92,12 +93,10 @@ main > .container {
     background-image: url("../images/3.webp");
     background-size: contain;
 }
-
 #card4 {
     background-image: url("../images/4.webp");
     background-size: contain;
 }
-
 #card5 {
     background-image: url("../images/5.webp");
     background-size: contain;
@@ -105,6 +104,41 @@ main > .container {
 
 #card6 {
     background-image: url("../images/6.webp");
+    background-size: contain;
+}
+
+/* Card img hover */
+
+#card1:hover {
+    background-image: url("../images/1b.webp");
+    background-size: contain;
+}
+
+#card2:hover {
+    background-image: url("../images/2b.webp");
+    background-size: contain;
+}
+
+#card3:hover {
+    background-image: url("../images/3b.webp");
+    background-size: contain;
+}
+
+
+#card4:hover {
+    background-image: url("../images/4b.webp");
+    background-size: contain;
+}
+
+
+#card5:hover {
+    background-image: url("../images/5b.webp");
+    background-size: contain;
+}
+
+
+#card6:hover {
+    background-image: url("../images/6b.webp");
     background-size: contain;
 }
 

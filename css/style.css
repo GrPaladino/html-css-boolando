@@ -10,7 +10,7 @@
 
 .container {
     width: 80%;
-    margin: 40px auto;
+    margin: 40px auto 0 auto;
 }
 
 a {
@@ -76,70 +76,16 @@ main > .container {
     padding: 14px 14px;
     position: absolute;
     left: 88%;
-}
-/* Card img standard */
-
-#card1 {
-    background-image: url("../images/1.webp");
-    background-size: contain;
+    top: 0;
 }
 
-#card2 {
-    background-image: url("../images/2.webp");
-    background-size: contain;
+.main img {
+    height: 500px;
+    width: 350px;
+    min-width: 200px;
+    margin-bottom: 40px;
 }
 
-#card3 {
-    background-image: url("../images/3.webp");
-    background-size: contain;
-}
-#card4 {
-    background-image: url("../images/4.webp");
-    background-size: contain;
-}
-#card5 {
-    background-image: url("../images/5.webp");
-    background-size: contain;
-}
-
-#card6 {
-    background-image: url("../images/6.webp");
-    background-size: contain;
-}
-
-/* Card img hover */
-
-#card1:hover {
-    background-image: url("../images/1b.webp");
-    background-size: contain;
-}
-
-#card2:hover {
-    background-image: url("../images/2b.webp");
-    background-size: contain;
-}
-
-#card3:hover {
-    background-image: url("../images/3b.webp");
-    background-size: contain;
-}
-
-
-#card4:hover {
-    background-image: url("../images/4b.webp");
-    background-size: contain;
-}
-
-
-#card5:hover {
-    background-image: url("../images/5b.webp");
-    background-size: contain;
-}
-
-#card6:hover {
-    background-image: url("../images/6b.webp");
-    background-size: contain;
-}
 
 .card .heart {
     display: inline-block;
@@ -186,6 +132,35 @@ main > .container {
 
 .pricetag .slashed {
     text-decoration-line: line-through;
+}
+
+/* Card img hover */
+
+.card .img-hover {
+position:absolute;
+display: none;
+}
+
+.card:hover .img-hover {
+    display: block;
+}
+
+#card1:hover .img1, 
+#card2:hover .img1,
+#card3:hover .img1, 
+#card4:hover .img1, 
+#card5:hover .img1, 
+#card6:hover .img1 {
+    display: none;
+}
+
+#card1:hover .heart,
+#card2:hover .heart,
+#card3:hover .heart,
+#card4:hover .heart,
+#card5:hover .heart, 
+#card6:hover .heart {
+    color: red;
 }
 
 /* FOOTER */

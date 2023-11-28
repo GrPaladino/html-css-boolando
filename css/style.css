@@ -1,0 +1,164 @@
+/* ### RULES */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+/* UTILIS */
+
+.container {
+    width: 80%;
+    margin: 40px auto;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+
+/* HEADER */
+
+header {
+    height: 55px;
+    background-color: #ff6900;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.header.container {
+    width: 80%;
+    height: 100%;
+    min-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header a {
+    padding-right: 5px;
+}
+
+.header .logo {
+    width: 20%;
+}
+
+.logo-wrapper {
+    text-align: center;
+}
+
+/* MAIN */
+
+main > .container {
+    height: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.main .card {
+    height: 500px;
+    width: 350px;
+    min-width: 200px;
+    background-color: antiquewhite;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.main .card .heart {
+    display: inline-block;
+    font-size: 1rem;
+    background-color: white;
+    padding: 14px 14px;
+    position: absolute;
+    left: 88%;
+}
+
+#card1 {
+    background-image: url("../images/1.webp");
+    background-size: contain;
+}
+
+#card2 {
+    background-image: url("../images/2.webp");
+    background-size: contain;
+}
+
+#card3 {
+    background-image: url("../images/3.webp");
+    background-size: contain;
+}
+
+#card4 {
+    background-image: url("../images/4.webp");
+    background-size: contain;
+}
+
+#card5 {
+    background-image: url("../images/5.webp");
+    background-size: contain;
+}
+
+#card6 {
+    background-image: url("../images/6.webp");
+    background-size: contain;
+}
+
+.card .heart {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+}
+
+.card .info {
+    position: absolute;
+    bottom: 30px;
+    color: white;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.card .info .price {
+    background-color: red;
+    padding: 5px 10px;
+}
+
+.card .info .sostenibilità {
+    background-color: green;
+    padding: 5px 10px;
+}
+
+.main .description {
+    position: absolute;
+    top: 100%;
+}
+
+.main .description .brand,
+.main .description .pricetag {
+    font-size: 0.7rem;
+}
+
+.main .description .name {
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.pricetag > .red {
+    color: red;
+}
+
+.pricetag .slashed {
+    text-decoration-line: line-through;
+}
+
+/* FOOTER */
+
+footer {
+    width: 100%;
+    height: 100px;
+}

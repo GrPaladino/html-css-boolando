@@ -137,8 +137,8 @@ main > .container {
 /* Card img hover */
 
 .card .img-hover {
-position:absolute;
-display: none;
+    position:absolute;
+    display: none;
 }
 
 .card:hover .img-hover {
@@ -154,12 +154,7 @@ display: none;
     display: none;
 }
 
-#card1:hover .heart,
-#card2:hover .heart,
-#card3:hover .heart,
-#card4:hover .heart,
-#card5:hover .heart, 
-#card6:hover .heart {
+.heart:hover {
     color: red;
 }
 
